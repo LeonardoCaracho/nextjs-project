@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import axios from 'axios' 
 
 export async function getStaticProps(context) {
     const pokemons = await axios.get('https://pokeapi.co/api/v2/pokedex/2/').then(res => {
